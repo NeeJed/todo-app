@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/App.css';
 import Button from './UI/button/Button';
+import randomColor from '../utils/randomColor';
 
 const TodoItem = (props) => {
     return (
@@ -11,8 +12,9 @@ const TodoItem = (props) => {
                 <div className="todo_tags">
                     {props.todo.tags.map((item, index) => 
                         <div
+                            style={{borderColor: randomColor()}}
                             className="todo__tag"
-                            key={item + '_' +  + '_' + props.todo.id}
+                            key={`${item}_${index}_${props.todo.id}`}
                         >
                             {item}
                         </div>

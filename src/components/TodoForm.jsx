@@ -32,7 +32,9 @@ const TodoForm = ({create, addButtonTitle = "Добавить", editableTodo, se
         e.preventDefault();
         if (todo.title.length) {
             const newTodo = {
-                ...todo, id: Date.now(),
+                ...todo,
+                id: Date.now(),
+                tags: todo.tags.filter(t => t !== ''),
             }
             create(newTodo);
             setTodo({title: '', desc: '', tags: []});

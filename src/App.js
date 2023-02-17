@@ -5,7 +5,6 @@ import TodoForm from './components/TodoForm';
 import Modal from './components/UI/modal/Modal';
 import Button from './components/UI/button/Button';
 import CockieEditing from './utils/CockieEditing';
-import Input from './components/UI/input/Input';
 
 const App = () => {
 
