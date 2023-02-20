@@ -41,6 +41,9 @@ body {
     color: #070707;
     box-shadow: 0px 2px 6px -3px rgba(47, 102, 144, 0.2);
 }
+.todo_drag {
+    box-shadow: 0px 3px 6px 0px rgba(7,7,7,0.35);
+}
 .todo__body {
 }
 .todo__title {
@@ -70,8 +73,19 @@ body {
     margin: 3px;
 }
 .todo_buttons button:hover {
-    color: rgb(224, 37, 37);
-    border: 1px solid rgb(224, 37, 37);
+    color: rgb(224, 37, 37)!important;
+    border: 1px solid rgb(224, 37, 37)!important;
+}
+
+.todo_completed div {
+    color: rgba(7, 7, 7, 0.75)!important;
+}
+.todo_completed div button {
+    color: rgba(7, 7, 7, 0.75)!important;
+    border-color: rgba(7, 7, 7, 0.75)!important;
+}
+.todo_completed {
+    background: rgb(225, 255, 238);
 }
 
 .myInputError {
@@ -91,4 +105,28 @@ body {
         border: 1px solid rgb(224, 37, 37);
         background: rgb(255, 218, 218);
     }
+}
+
+.todos-total {
+    display: flex;
+    justify-content: right;
+    color: #070707;
+    margin-bottom: 20px;
+}
+.todos-total__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+.todos-total__value {
+    font-size: 25px;
+}
+
+.footer {
+    display: flex;
+    color: rgba(7,7,7,0.7);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,4 +1,4 @@
-const CockieEditing = (todos, setTodos) => {
+const cockieEditing = (todos, setTodos) => {
     const getCookie = (name) => {
         let matches = document.cookie.match(new RegExp(
           "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
@@ -41,4 +41,4 @@ const CockieEditing = (todos, setTodos) => {
     }
 }
 
-export default CockieEditing;
+export default cockieEditing;
